@@ -14,7 +14,18 @@ module.exports = (function() {
     up() {
 
       return [
-        this.createTable("locations", [{"name":"device_id","type":"string"},{"name":"latitude","type":"string"},{"name":"longitude","type":"string"},{"name":"speed","type":"int"},{"name":"course","type":"int"},{"name":"altitude","type":"int"},{"name":"timestamp","type":"datetime"},{"name":"true_heading","type":"int"},{"name":"magnetic_heading","type":"int"},{"name":"heading_accuracy","type":"int"}])
+        this.createTable("locations", [
+          {"name":"device_id","type":"string"},
+          {"name":"latitude","type":"string"},
+          {"name":"longitude","type":"string"},
+          {"name":"speed","type":"int"},
+          {"name":"course","type":"int"},
+          {"name":"altitude","type":"int"},
+          {"name":"timestamp","type":"datetime"},
+          {"name":"true_heading","type":"int"},
+          {"name":"magnetic_heading","type":"int"},
+          {"name":"heading_accuracy","type":"int"}
+        ])
       ];
 
     }
