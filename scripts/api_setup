@@ -1,0 +1,6 @@
+# location
+nodal g:model location user_id:int latitude:string longitude:string speed:int course:int altitude:int timestamp:datetime trueHeading:int magneticHeading:int headingAccuracy:int && nodal g:controller v2 --for unitlocation
+
+
+#locations controller
+nodal g:controller location

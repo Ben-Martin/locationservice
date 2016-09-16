@@ -1,0 +1,48 @@
+{
+
+  "migration_id": 2016091603125936,
+
+  "models": {
+
+    "Device": {
+
+      "table": "devices",
+
+      "columns": [
+        {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
+        {"name": "name", "type": "string", "properties": {}},
+        {"name": "system_name", "type": "string", "properties": {}},
+        {"name": "system_version", "type": "string", "properties": {}},
+        {"name": "device_model", "type": "string", "properties": {}},
+        {"name": "device_id", "type": "string", "properties": {}},
+        {"name": "created_at", "type": "datetime", "properties": {}},
+        {"name": "updated_at", "type": "datetime", "properties": {}}
+      ]
+
+    },
+
+    "Location": {
+
+      "table": "locations",
+
+      "columns": [
+        {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
+        {"name": "device_id", "type": "string", "properties": {}},
+        {"name": "latitude", "type": "string", "properties": {}},
+        {"name": "longitude", "type": "string", "properties": {}},
+        {"name": "speed", "type": "int", "properties": {}},
+        {"name": "course", "type": "int", "properties": {}},
+        {"name": "altitude", "type": "int", "properties": {}},
+        {"name": "timestamp", "type": "datetime", "properties": {}},
+        {"name": "true_heading", "type": "int", "properties": {}},
+        {"name": "magnetic_heading", "type": "int", "properties": {}},
+        {"name": "heading_accuracy", "type": "int", "properties": {}},
+        {"name": "created_at", "type": "datetime", "properties": {}},
+        {"name": "updated_at", "type": "datetime", "properties": {}}
+      ]
+
+    }
+
+  }
+
+}
