@@ -12,7 +12,6 @@ module.exports = (function() {
       Device.query()
         .where(this.params.query)
         .end((err, models) => {
-
           this.respond(err || models);
 
         });

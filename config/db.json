@@ -1,5 +1,5 @@
 {
-  "development": {
+  "test": {
     "main": {
       "adapter": "postgres",
       "host": "localhost",
@@ -9,14 +9,14 @@
       "database": "location_service_development"
     }
   },
-  "test": {
+  "development": {
     "main": {
       "adapter": "postgres",
-      "host": "localhost",
+      "host": "mydbinstance.czjnmxzxbpuw.ap-southeast-2.rds.amazonaws.com",
       "port": "5432",
-      "user": "postgres",
-      "password": "",
-      "database": "location_service_test"
+      "user": "master",
+      "password": "mypassword",
+      "database": "locations"
     }
   },
   "production": {
